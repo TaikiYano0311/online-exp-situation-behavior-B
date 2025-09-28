@@ -48,6 +48,23 @@ N_VIDEOS = 4
 
 if "scenarios" not in st.session_state:
     # Initialize
+    #scenarios_A = [
+    #    {"idx": "1-1", "videos": [["1-1dd", "1-1dc"], ["1-1cc", "1-1cd"]]},
+    #    {"idx": "1-3", "videos": [["1-3dd", "1-3dc"], ["1-3cc", "1-3cd"]]},
+    #    {"idx": "2-1", "videos": [["2-1dd", "2-1dc"], ["2-1cc", "2-1cd"]]},
+    #    {"idx": "2-3", "videos": [["2-3dd", "2-3dc"], ["2-3cc", "2-3cd"]]},
+    #    {"idx": "3-2", "videos": [["3-2dd", "3-2dc"], ["3-2cc", "3-2cd"]]},
+    #    {"idx": "3-3", "videos": [["3-3dd", "3-3dc"], ["3-3cc", "3-3cd"]]},
+    #]
+    #scenarios_B = [
+    #    {"idx": "1-1", "videos": [["1-1dd", "1-1dc"], ["1-1cc", "1-1cd"]]},
+    #    {"idx": "1-2", "videos": [["1-2dd", "1-2dc"], ["1-2cc", "1-2cd"]]},
+    #    {"idx": "2-2", "videos": [["2-2dd", "2-2dc"], ["2-2cc", "2-2cd"]]},
+    #    {"idx": "2-4", "videos": [["2-4dd", "2-4dc"], ["2-4cc", "2-4cd"]]},
+    #    {"idx": "3-1", "videos": [["3-1dd", "3-1dc"], ["3-1cc", "3-1cd"]]},
+    #    {"idx": "3-3", "videos": [["3-3dd", "3-3dc"], ["3-3cc", "3-3cd"]]},
+    #]
+    # Initialize
     scenarios_A = [
         {"idx": "1-1", "videos": [["1-1dd", "1-1dc"], ["1-1cc", "1-1cd"]]},
         {"idx": "1-3", "videos": [["1-3dd", "1-3dc"], ["1-3cc", "1-3cd"]]},
@@ -57,12 +74,12 @@ if "scenarios" not in st.session_state:
         {"idx": "3-3", "videos": [["3-3dd", "3-3dc"], ["3-3cc", "3-3cd"]]},
     ]
     scenarios_B = [
-        {"idx": "1-1", "videos": [["1-1dd", "1-1dc"], ["1-1cc", "1-1cd"]]},
         {"idx": "1-2", "videos": [["1-2dd", "1-2dc"], ["1-2cc", "1-2cd"]]},
+        {"idx": "1-3", "videos": [["1-3dd", "1-3dc"], ["1-3cc", "1-3cd"]]},
         {"idx": "2-2", "videos": [["2-2dd", "2-2dc"], ["2-2cc", "2-2cd"]]},
         {"idx": "2-4", "videos": [["2-4dd", "2-4dc"], ["2-4cc", "2-4cd"]]},
         {"idx": "3-1", "videos": [["3-1dd", "3-1dc"], ["3-1cc", "3-1cd"]]},
-        {"idx": "3-3", "videos": [["3-3dd", "3-3dc"], ["3-3cc", "3-3cd"]]},
+        {"idx": "3-2", "videos": [["3-2dd", "3-2dc"], ["3-2cc", "3-2cd"]]},
     ]
     scenarios = scenarios_B
     # scenarios = scenarios_B
