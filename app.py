@@ -36,11 +36,19 @@ with st.container(border=True):
     
 st.title("入力情報")
 with st.container(border=True):
+        st.markdown(
+             """
+             貴方のCrowdWorks表示名
+             【 下記URLの右側に表示される、Crowdworks上の貴方のお名前 】
+             を記載して下さい。
+             https://crowdworks.jp/dashboard
+             """
+        )
         userid = st.text_input(
-            label="ユーザーID", placeholder="ユーザーIDを半角で入力してください"
+            label="CrowdWorks表示名", placeholder="CrowdWorks表示名を半角で入力してください"
         )
         userid_re_input = st.text_input(
-            label="ユーザーIDの確認", placeholder="もう一度ユーザーIDを半角で入力してください",
+            label="CrowdWorks表示名の確認", placeholder="もう一度CrowdWorks表示名を半角で入力してください",
         )
         gender = st.radio(
             label="性別",
@@ -58,7 +66,7 @@ with st.container(border=True):
         ):
             if userid_re_input != userid:
                 st.warning(
-                    "ユーザーIDが異なります。ご確認ください。"
+                    "CrowdWorks表示名が異なります。ご確認ください。"
                 )
             else:
                 st.session_state["userid"] = userid
@@ -69,4 +77,3 @@ with st.container(border=True):
                 ).strftime("%Y-%m-%d_%H-%M-%S")
                 st.switch_page("pages/intro.py")
 
-        
